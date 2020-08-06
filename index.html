@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Remembrance</title>
+    <style>
+        @import url(Style.css);
+        p{
+            margin-left: 5%;
+        }
+        img {
+            float: right;
+            margin: 0 12px;
+            width: 400px;
+            height: 300px
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+                <ul>
+                    <li class="nav-link active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-link">
+                    <a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-link">
+                    <a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <p><img src="Photo coding.jpg" alt="Family having fun"></p>
+            <h1>Remembrance</h1>
+            <p>Hello welcome to Remembrance, the place where you can revive your favorite moments or your live with photos and videos</p><br>
+            <p>Here you can go through our pages and learn more about Remenbrance and if you have any qeustions go to the contact page and contact me through there</p><br>
+            <p>You can also look at the about page where you can see how this website works</p><br>
+            <form>
+            <p>Login in<input type="email" value="insert email"><input type="password" value="password">
+                    <input type="button" onclick="window.location.href='about.html';" value="submit"></p><br><br>
+        </form>
+        <form>
+            <p>Sign in<input type="email" value="insert email"><input type="password" value="password">
+                    <input type="button" onclick="window.location.href='about.html';" value="submit"></p>    
+        </form>
+        </main>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("form").submit(function(event){
+                    event.preventDefault()
+                    alert(".submitted");
+                    var selector = $( "select#FormControlSelect1 option:signed in" ).val();
+            })
+            });
+        </script>
+
+    </body>
+</html>
